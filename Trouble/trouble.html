@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Trouble</title>
+    <script src="file:///Users/estherfeldman/Downloads/Trouble/trouble.js"></script>
+    <link href="trouble.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- <section> -->
+        <div id = "menu"> 
+        
+            <div class = "wrapper">
+                <h2> Players: </h2>
+                <input type="number" id="player-count" min="1" max="4" value = "4">
+            </div>
+            <div class = "wrapper" id = "player-0"> 
+                <input id = "name-0" type = "text" value = "Player 1"> </input>
+                <input id = "color-0" type = "color" value = "#ef476f"> </input>
+                <input id = "check-0" type = "checkbox"> Bot </input>
+            </div>
+             <div class = "wrapper" id = "player-1"> 
+                <input id = "name-1" type = "text" value = "Player 2"> </input>
+                <input id = "color-1" type = "color" value = "#118ab2"> </input>
+                <input id = "check-1" type = "checkbox" checked = "true"> Bot </input>
+            </div>
+             <div class = "wrapper" id = "player-2"> 
+                <input id = "name-2" type = "text" value = "Player 3"> </input>
+                <input id = "color-2" type = "color" value = "#06d6a0"> </input>
+                <input id = "check-2" type = "checkbox" checked = "true"> Bot </input>
+            </div>
+             <div class = "wrapper" id = "player-3"> 
+                <input id = "name-3" type = "text" value = "Player 4"> </input>
+                <input id = "color-3" type = "color" value = "#ffd166"> </input>
+                <input id = "check-3" type = "checkbox" checked = "true"> Bot </input>
+            </div>
+            <div class = "wrapper"> 
+                <button id = "start-button"> Create Game </button>
+            </div>
+
+        
+          
+        </div>
+   <!--  </section> -->
+<section id = "game-board">
+     <div class = "info"> 
+                <div id = "cue"> </div>
+
+            <div id = "game-buttons">
+                <button class = "game-button" id = "new-game"> New Game </button>
+                <button class = "game-button" id = "continue"> Continue </button>
+            </div>
+    </div>
+
+    <div id = "board-wrapper">
+            
+            <div class = "start-horizontal"> 
+                <button id = "101"> 101 </button>
+                <button id = "102"> 102  </button>
+                <button id = "103"> 103 </button>
+                <button id = "104"> 104 </button>
+            </div>
+        <div id = "horizontal-wrapper">
+            <div class = "start-vertical"> 
+                <button id = "404"> 404 </button>
+                <button id = "403"> 403  </button>
+                <button id = "402"> 402 </button>
+                <button id = "401"> 401 </button>
+            </div>
+            <div class = "board"> 
+                <button id = "1"> 1 </button>
+                <button id = "2"> 2  </button>
+                <button id = "3"> 3 </button>
+                <button id = "4"> 4 </button>
+                <button id = "5"> 5 <div class = "arrow-0"></button>
+                <button id = "6"> 6 </button>
+                <button id = "7"> 7 </button>
+                <button id = "8"> 8 </button>
+                <button class = "left" id = "28"> 28 </button>
+                <div class = "home-vertical first"> 
+                    <div class = "layer"> </div>
+                    <button class = "home" id = "111"> 111 </button>
+                    <button class = "home" id = "112"> 112  </button>
+                    <button class = "home" id = "113"> 113 </button>
+                    <button class = "home" id = "114"> 114 </button>
+                </div>
+                <button class = "right" id = "9"> 9 </button>
+                <button class = "left" id = "27"> 27 </button>
+                <button class = "right" id = "10"> 10 </button>
+                <button class = "left" id = "26"> 26 <div class = "arrow-3"> </button>
+
+                 <div class = "home-horizontal fourth"> 
+                    <div class = "layer"> </div>
+                    <button class = "home" id = "411"> 411 </button>
+                    <button class = "home" id = "412"> 412  </button>
+                    <button class = "home" id = "413"> 413 </button>
+                    <button class = "home" id = "414"> 414 </button>
+                </div>
+
+                <img id="die" src = "assets/dice-1.svg"> </img>
+
+                <div class = "home-horizontal second"> 
+                    <div class = "layer"> </div>
+                        <button class = "home" id = "214"> 214 </button>
+                        <button class = "home" id = "213"> 213  </button>
+                        <button class = "home" id = "212"> 212 </button>
+                        <button class = "home" id = "211"> 211 </button>
+                    <!-- </div> -->
+                </div>
+
+                <button class = "right" id = "11"> 11 </button>
+                <button class = "left" id = "25"> 25 </button>
+                <button class = "right" id = "12"> 12 <div class = "arrow-1"> </button>
+                <button class = "left" id = "24"> 24 </button>
+
+                <div class = "home-vertical third"> 
+                    <div class = "layer"> </div>
+
+                    <button class = "home" id = "314"> 314 </button>
+                    <button class = "home" id = "313"> 313  </button>
+                    <button class = "home" id = "312"> 312 </button>
+                    <button class = "home" id = "311"> 311 </button>
+                
+                </div>
+                <button class = "right" id = "13"> 13 </button>
+                <button class = "left" id = "23"> 23 </button>
+                <button class = "right" id = "14"> 14 </button>
+                <button id = "22"> 22 </button>
+                <button id = "21"> 21 </button>
+                <button id = "20"> 20 </button>
+                <button id = "19"> 19 <div class = "arrow-2"> </div> </button>
+                <button id = "18"> 18 </button>
+                <button id = "17"> 17 </button>
+                <button id = "16"> 16 </button>
+                <button id = "15"> 15 </button>
+            </div>
+            <div class = "start-vertical"> 
+                <button id = "201"> 201 </button>
+                <button id = "202"> 202  </button>
+                <button id = "203"> 203 </button>
+                <button id = "204"> 204 </button>
+            </div>
+        </div>
+        <div class = "start-horizontal"> 
+            <button id = "304"> 304 </button>
+            <button id = "303"> 303  </button>
+            <button id = "302"> 302 </button>
+            <button id = "301"> 301 </button>
+        </div>
+    </div>
+    <div class = "info" id = "rules-container"> 
+
+                <h1 id = "help"> ? </h1>
+
+                <div id = "rules">
+                    <h3> Objective: </h3>
+
+                    <p> Move all 4 colored pieces clockwise around the board and into the corresponding home position in the center. </p>
+
+                    <h3> How to Play: </h3>
+
+                    <p> On your turn, click the die. Move any piece exactly that number of spaces. Move by clicking the space you want to move to, or the piece you want to move. If you land on another player's piece, it will be bumped back to starting position. You cannot bump yourself. If no move is possible, your turn will be skipped. </p>
+                </div>
+
+    </div>
+</section>
+
+
+</body>
+</html>
